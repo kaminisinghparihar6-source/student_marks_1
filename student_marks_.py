@@ -14,6 +14,10 @@ from sklearn.model_selection import train_test_split # its a module
 from sklearn.linear_model import LinearRegression #for linear regression
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score # for errors
 print("the libraries are import")
+import streamlit as st
+
+st.title("Student Marks Prediction")
+st.write("Welcome to my Machine Learning Project")
 
 # there are create the dataset
 # there are all elements numbers are same quntity
@@ -147,5 +151,7 @@ joblib.dump(model, "student_marks_model.pkl")
 print("scikit-learn version:", sklearn.__version__)
 print("Model saved successfully!")
 
-from google.colab import files
-files.download("student_marks_model.pkl")
+import streamlit as st
+
+st.title("Student Marks Prediction")
+st.write("Welcome to my Machine Learning Project")
